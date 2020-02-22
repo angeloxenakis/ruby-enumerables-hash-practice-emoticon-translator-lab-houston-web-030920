@@ -6,9 +6,8 @@ def load_library(file_path)
   get_meaning = {}
   get_emoticon = {}
   emote_list.each do |meaning, emotes_array|
-    get_meaning[emotes_array[1]] = nil
+    get_meaning[emotes_array[1]] = meaning
   end 
-  
   get_meaning
   binding.pry
   meanings = []
