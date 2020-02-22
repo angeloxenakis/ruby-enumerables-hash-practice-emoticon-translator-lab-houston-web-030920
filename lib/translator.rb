@@ -15,8 +15,10 @@ def load_library(file_path)
   result = {:get_meaning => get_meaning, :get_emoticon => get_emoticon}
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file_path, emoticon)
+  load_library(file_path).each[:get_emoticon].each do |n|
+    
+  
 end
 
 def get_english_meaning
