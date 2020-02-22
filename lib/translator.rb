@@ -12,11 +12,11 @@ def load_library(file_path)
   emote_list.each do |meaning, emotes_array|
     get_emoticon[emotes_array[0]] = emotes_array[1]
   end 
+  get_emoticon
   
   get_meaning
   get_emoticon
   binding.pry
-  meanings = []
   
   result = {:get_meaning => nil, :get_emoticon => nil}
 end
