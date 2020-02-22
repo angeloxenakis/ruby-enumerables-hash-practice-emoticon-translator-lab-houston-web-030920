@@ -13,7 +13,6 @@ def load_library(file_path)
     get_emoticon[emotes_array[0]] = emotes_array[1]
   end 
   result = {:get_meaning => get_meaning, :get_emoticon => get_emoticon}
-  binding.pry
 end
 
 def get_japanese_emoticon
