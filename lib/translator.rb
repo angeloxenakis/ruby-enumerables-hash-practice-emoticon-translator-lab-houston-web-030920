@@ -2,8 +2,10 @@ require 'yaml'
 require 'pry'
 
 def load_library(file_path)
-  emotes = YAML.load_file(file_path)
-  emotes.each
+  emote_list = YAML.load_file(file_path)
+  meanings = []
+  
+  emote_list.each
   binding.pry
 end
 
