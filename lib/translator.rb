@@ -3,6 +3,7 @@ require 'pry'
 
 def load_library(file_path)
   emotes = YAML.load_file(file_path)
+  emotes.each
   binding.pry
 end
 
