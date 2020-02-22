@@ -3,6 +3,9 @@ require 'pry'
 
 def load_library(file_path)
   emote_list = YAML.load_file(file_path)
+  emote_list.each do |meaning, emotes_array|
+    
+  end 
   binding.pry
   meanings = []
   
